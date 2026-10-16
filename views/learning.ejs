@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>
+    <body>
+        <% if(loggedIn){ %>
+    <%- include('partials/navbar2.ejs') %>
+            <% }else{ %>
+                <%- include('partials/navbar1.ejs') %>
+                    <% } %>
+        
+        
+        <div class="container">
+        <h2 class="mt-4 mb-3 text-dark">Financial Learning</h2>
+        <table style="margin-bottom: 80px;" class="table table-bordered"border="1">
+            <tr>
+                <th>Word</th>
+                <th>Description</th>
+            </tr>
+            <% learning.forEach(function(ln) { %>
+            <tr>
+                <td><%= ln.word %></td>
+                <td><%= ln.description %></td>
+            </tr>
+        <% }); %>
+        </table>
+
+
+
+        </div>
+    </body>
+</html>

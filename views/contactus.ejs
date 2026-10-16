@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <%- include('partials/header1.ejs') %>
+</head>
+
+<body>
+    <% if(loggedIn){ %>
+        <%- include('partials/navbar2.ejs') %>
+            <% }else{ %>
+                <%- include('partials/navbar1.ejs') %>
+                    <% } %>
+
+
+                        <div class="container w-25">
+
+                            <h2 class="mt-4 mb-3 text-dark">Contact Us</h2>
+                            </br>
+                            <form method="POST">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter Name"
+                                        name="name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Enter email address"
+                                        name="email">
+                                </div>
+                                <div class="mb-3" style="height:100px">
+                                    <label for="content" class="form-label">Questions/Comments</label>
+                                    <input type="text" class="form-control h-100" id="content"
+                                        placeholder="Enter questions and/or comments" name="content">
+                                </div>
+                                <br>
+
+                                <button type="submit">Submit</button>
+
+
+
+
+
+
+
+                            </form>
+
+
+
+
+
+
+
+
+
+                        </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>
+    <body>
+        <%- include('partials/navbar1.ejs') %>
+        <div class="container w-25">
+            <h2 class="mt-4 mb-3 text-dark">Login</h2>
+        </br>
+            <form action="/auth" method="post">
+                <div class="mb-3">
+                <input type="text" class="form-control" name="username" placeholder="User Name" id="name" required>
+                </div>
+                <div class="mb-3">
+                <input type="password" class="form-control" name="password" placeholder="Password" id="password" required>
+                </div>
+                <input type="submit" value="Login">
+            </form>
+            <br>
+            <h4 class="mt-4 mb-3 text-dark"><a href="register">Register</a></h4>
+        </div>
+    </body>
+</html>

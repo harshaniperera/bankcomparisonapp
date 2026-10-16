@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <%-include('partials/header1.ejs') %>
+    </head>
+    <body>
+        <% if(loggedIn){ %>
+    <%- include('partials/navbar2.ejs') %>
+        <% }else{ %>
+            <%- include('partials/navbar1.ejs') %>
+                <% } %>
+
+        <p>Results</p>
+           <% ResultData.forEach(function(rd) { %>
+            <tr>
+                <td><%= rd.accounttype %></td>
+                <td><%= rd.description %></td>
+            </tr>
+        <% }); %>  
+
+
+        </body>
+
+
+</html>

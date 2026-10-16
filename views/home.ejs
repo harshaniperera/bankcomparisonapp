@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <%- include('partials/header1.ejs') %>
+    </head>
+    <body>
+
+
+            <% if(loggedIn){ %>
+        <%- include('partials/navbar2.ejs') %>
+                <% }else{ %>
+                    <%- include('partials/navbar1.ejs') %>
+                        <% } %>
+
+       <div style="background-color: rgb(34, 34, 33) ; color:white; padding:40px; text-align:center; font-size:24px; font-weight:bold;">
+            <h1>Compare Bank Account Interest Rates</h1>
+        </div>
+    
+    <div class="container">
+            <img class="img2" src="/public/images/pexels-leeloothefirst-5562086.jpg" alt="interestrates">
+            </br>
+            <P style="font-size: 25px;">Click here to compare <a href="bankrates">Bank Rates</a></p>
+            </br>
+                <p style="font-size: 20px;">We are a centralised, unbiased platform that helps New Zealanders easily compare bank account interest rates across multiple banks.</p>
+
+<p style="font-size:20px">Different banks present their savings accounts, term deposits, and everyday account rates in inconsistent formats, updated at different times, and 
+    using different terminology. </p>
+    <br>
+<p style="font-size:20px">This makes it difficult and time‑consuming for people to find, interpret, and compare the best options.
+Our website brings all this information together in one place, making it simple to understand current rates, identify better returns, and make confident financial decisions.
+                </p>
+                <br>
+
+                <p style="font-size: 20px;"> <a href="contactus">Contact Us</a> for any queries or more information.</p>
+                <br>
+
+                <p style="font-size: 20px;"> <a href="Register">Register</a> to access our community discussion where you can interact with others to get answers and financial advise</p>
+        </div>
+    </body>
+</html>
